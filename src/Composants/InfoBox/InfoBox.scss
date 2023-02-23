@@ -1,0 +1,24 @@
+
+
+.InfoBox_Header
+    {
+        display: flex;
+        &_Left_Border
+            {
+                width: 300px;
+                border-radius: 40px 0 0 40px;
+                overflow: hidden;
+            }
+        &_Right_Border
+            {
+                width: 300px;
+                border-radius: 0 40px 40px 0;
+                overflow: hidden;
+            }
+        &_Icon
+            {
+                width: 140px;
+                display: flex;
+                justify-content: center;
+            }
+    }

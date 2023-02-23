@@ -1,0 +1,26 @@
+[
+    {
+        "Id": "Who",
+        "Txt": "blabla"
+    },
+
+    {
+        "Id": "Skills",
+        "Txt": "blabla"
+    },
+
+    {
+        "Id": "Tools",
+        "Txt": "blabla"
+    },
+
+    {
+        "Id": "Tech",
+        "Txt": "blabla"
+    },
+
+    {
+        "Id": "Projects",
+        "Txt": "blabla"
+    }
+]
