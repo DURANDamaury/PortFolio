@@ -1,31 +1,16 @@
 import "./Border.scss";
 function Border()
     {
-        //lines must been generated
+        //Generate lines in borders
+        const lines=[];
+        //simple loop pushing jsx on array
+        for(let i=0 ; i<11 ; i++){lines.push(<><div className="Border_line"></div><div className="Border_line_space"></div></>)}
+
+        
+
         return (
             <>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
-                <div className="Border_line"></div>
-                <div className="Border_line_space"></div>
+                {lines}
                 <div className="Border_line"></div>
             </>
         );

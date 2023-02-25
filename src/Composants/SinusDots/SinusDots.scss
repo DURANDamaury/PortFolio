@@ -1,0 +1,24 @@
+#SinusDots
+    {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: auto;
+        background-color: #1d0e3f;
+        color: #FFFFFF;
+    }
+
+#dotsZone
+    {
+        position: static;
+        width: 200px;
+        height: 200px;
+    }
+
+.dot
+    {
+        position: relative;
+        width: 1px;
+        height: 1px;
+        background-color: white;
+    }

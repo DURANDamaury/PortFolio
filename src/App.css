@@ -1,2 +1,9 @@
 body
-    {background-color: #0e1350;}
+    {
+        background-color: #60659c;
+        button
+            {
+                border: none;
+                padding: 0;
+            }
+    }

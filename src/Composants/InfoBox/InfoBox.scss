@@ -1,24 +1,94 @@
 
+.InfoBox_true
+    {
+        color: #a7a7a7;
+        width: fit-content;       
+        background-color: #20204e;
+        border: 1px solid #0001b9;
+        border-radius: 40px 40px 5px 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        transition: background-color 0.5s ease-in-out,border 0.5s ease-in-out 0.5s;
+    }
+
+.InfoBox_false
+    {
+        color: #a7a7a7;
+        width: fit-content;       
+        background-color: #20204e00;
+        border: none;
+        border-radius: 40px 40px 5px 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;  
+        transition: background-color 0.5s ease-in-out 1s,border 0.5s ease-in-out 0.5s;
+    }
+
 
 .InfoBox_Header
     {
         display: flex;
-        &_Left_Border
+        border: 4px solid black;
+        border-radius: 40px;
+        overflow: hidden;
+        &_Left_Border_true
             {
-                width: 300px;
+                background-color: #0e1350;
+                width: 100%;
                 border-radius: 40px 0 0 40px;
                 overflow: hidden;
+                transition: width 1s ease-in-out
             }
-        &_Right_Border
+        &_Left_Border_false
             {
-                width: 300px;
+                background-color: #0e1350;
+                width: 0%;
+                border-radius: 40px 0 0 40px;
+                overflow: hidden;
+                transition: width 0.5s ease-in-out 2s
+            }    
+        &_Right_Border_true
+            {
+                background-color: #0e1350;
+                width: 100%;
                 border-radius: 0 40px 40px 0;
                 overflow: hidden;
+                transition: width 1s ease-in-out
+            }
+        &_Right_Border_false
+            {
+                background-color: #0e1350;
+                width: 0%;
+                border-radius: 0 40px 40px 0;
+                overflow: hidden;
+                transition: width 0.5s ease-in-out 2s
             }
         &_Icon
             {
-                width: 140px;
+                width: fit-content;
                 display: flex;
                 justify-content: center;
+                background-color: #20204e;
+                border: none;
             }
+    }
+
+.InfoBox_Body_true
+    {
+        max-height: 800px;
+        overflow: hidden;
+        white-space: break-spaces;
+        padding: 30px;
+        width: 700px;
+        opacity: 1;
+        transition: width 1s ease-in-out,max-height 2s ease-in-out,padding 1s ease-in-out 0.5s,opacity 0.5s linear 1s;
+    }
+.InfoBox_Body_false
+    {
+        max-height: 0px;
+        overflow: hidden;
+        white-space: break-spaces;
+        padding: 0px;
+        width: 0;
+        opacity: 0;
+        transition: width 1s ease-in-out 1s,max-height 1s ease-in-out 0.5s,padding 1s ease-in-out 1s, opacity 0.5s linear;
     }
