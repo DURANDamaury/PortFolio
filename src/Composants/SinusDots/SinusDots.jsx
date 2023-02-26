@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './SinusDots.scss';
 import AutoInc from '../../Tools/AutoInc';
 import {CreateSinusCurve,GenerateDotsXpos,GenerateDotsYpos} from './GenerateDots';
+import DotsControlPannel from './DotsControlPannel';
 
 
 
@@ -14,7 +15,7 @@ function SinusDots ()
         const courbe = CreateSinusCurve(curveWidth,curveForm);
 
         //on pourra choisir notre quantité de dots
-        let dotsQuantity = 50
+        const [dotsQuantity,SetDotsQuantity] = useState(50)
         //XPoint sera le pointeur de courbe en X
         const [XPoint,SetXPoint] = useState(0);
         const [YPoint,SetYPoint] = useState(10);
@@ -40,47 +41,27 @@ function SinusDots ()
 
         return (
                 <div id='SinusDots'>
-                    <div id="dotsZone">
+                    <div id="dotsZone" style={{height: 124+dotsQuantity}}>
                         {dotsTable.map((dot) => (
                             <div 
                                 key={`dot_${dot}`} 
                                 className={`dot_${dot} dot`} 
                                 style={{
-                                    top: DotsXPos[dot],
-                                    left: DotsYPos[dot]
+                                    top: DotsXPos[dot & 255],
+                                    left: DotsYPos[dot & 255]
                                     }}></div>))
                         }
                     </div>
-                    <div id="controlDots">
-                        <label for="Xgap">Ecart X</label>
-                        <input 
-                            type="range" 
-                            min="1" 
-                            max="30" 
-                            defaultvalue={Xgap} 
-                            onChange={(evenement) => SetXgap(evenement.target.value)} 
-                        />
-                        <br/>
-                        <label for="Ygap">Ecart Y</label>
-                        <input 
-                            type="range" 
-                            min="1" 
-                            max="30" 
-                            defaultvalue={Ygap} 
-                            onChange={(evenement) => SetYgap(evenement.target.value)} 
-                        />
-                        <br/>
-                        <label for="Décalage X">Décalage X</label>
-                        <input 
-                            type="range" 
-                            min="0" 
-                            max="255" 
-                            defaultvalue={XPoint} 
-                            onChange={(evenement) => SetXPoint(evenement.target.value)} 
-                        />
-
-
-                    </div>
+                    <DotsControlPannel
+                        dotsQuantity={dotsQuantity} 
+                        SetDotsQuantity={SetDotsQuantity} 
+                        XPoint={XPoint} 
+                        SetXPoint={SetXPoint} 
+                        Xgap={Xgap} 
+                        SetXgap={SetXgap} 
+                        Ygap={Ygap} 
+                        SetYgap={SetYgap} 
+                    />
                 </div>
             )
     }

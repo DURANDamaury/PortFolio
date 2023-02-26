@@ -1,0 +1,77 @@
+
+#controlDots
+    {
+        padding: 5px;
+    }
+
+#controlDots_header
+    {
+        display: flex;
+        justify-content: center;
+        box-shadow: 1px 6px 18px 0px rgba(54 39 87) inset;
+        -webkit-box-shadow: 1px 6px 18px 0px rgba(54 39 87) inset;
+        -moz-box-shadow: 1px 6px 18px 0px rgba(54 39 87) inset;
+        .ControlPannelOpenButton_false
+            {
+                transform: rotate(180deg);
+                transition:transform 400ms linear
+            }
+        .ControlPannelOpenButton_true
+            {
+                transform: rotate(0deg);
+                transition:transform 400ms linear
+            }
+    }
+
+#controlDots_body
+    {
+        .controlDots_body
+            {
+                display: flex;
+            }
+
+        &_false
+            {
+                display: flex;
+                max-height: 0px;
+                overflow: hidden;
+                transition: max-height 400ms ease-in-out;
+            }
+        &_true
+            {
+                display: flex;
+                max-height: 200px;
+                overflow: hidden;
+                transition: max-height 400ms ease-in-out;
+            }
+    }
+
+
+input[type="range"]
+    {
+        appearance: none;
+        cursor: default;
+        background: #008a39;
+        padding: initial;
+        border: initial;
+        border-radius: 5px;
+        margin: 2px;
+        &::-webkit-slider-thumb 
+            {
+                -webkit-appearance: none; /* Override default look */
+                appearance: none;
+                width: 12px; /* Set a specific slider handle width */
+                height: 12px; /* Slider handle height */
+                background: #00fa9e; /* Green background */
+                cursor: pointer; /* Cursor on hover */
+                border-radius: 6px;
+            }
+        &::-moz-range-thumb 
+            {
+                width: 12px; /* Set a specific slider handle width */
+                height: 12px; /* Slider handle height */
+                background: #00fa9e; /* Green background */
+                cursor: pointer; /* Cursor on hover */
+                border-radius: 6px;
+            }
+    }
