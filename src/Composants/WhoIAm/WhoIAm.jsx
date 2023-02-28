@@ -3,6 +3,7 @@ import SinusDots from "../SinusDots/SinusDots"
 
 function WhoIAm()
     {
+        
         return (
             <div className="WhoIAm">
                 <h2>Qui suis-je ?</h2>

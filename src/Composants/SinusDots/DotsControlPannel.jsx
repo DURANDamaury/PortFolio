@@ -19,9 +19,9 @@ function DotsControlPannel ({dotsQuantity,SetDotsQuantity,Xgap,SetXgap,Ygap,SetY
 
                 <div id={`controlDots_body_${ControlPannelStatus}`} className='controlDots_body'>
                     <div className='controlDots_body_labels'>
-                        <label for="DotsQuantity">Quantité de Dots</label><br/>
-                        <label for="Xgap">Ecart X</label><br/>
-                        <label for="Ygap">Ecart Y</label>
+                        <label for="DotsQuantity">Quantité: {dotsQuantity}</label><br/>
+                        <label for="Xgap">Ecart X: {Xgap}</label><br/>
+                        <label for="Ygap">Ecart Y: {Ygap}</label>
                     </div>
                     <div className='controlDots_body_inputs'>               
                         <input
@@ -30,7 +30,7 @@ function DotsControlPannel ({dotsQuantity,SetDotsQuantity,Xgap,SetXgap,Ygap,SetY
                             min="1" 
                             max="255" 
                             defaultvalue={dotsQuantity} 
-                            onChange={(evenement) => SetDotsQuantity(evenement.target.value)} 
+                            onChange={(evenement) => SetDotsQuantity(parseInt(evenement.target.value))} 
                         />
                         <br/>
                         

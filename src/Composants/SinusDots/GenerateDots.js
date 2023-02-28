@@ -23,7 +23,7 @@ function CreateSinusCurve(curveWidth,curveForm)
         return courbe;
     }
 
-function GenerateDotsXpos(courbe,dotsQuantity,XPoint,Xgap)
+function GenerateDotsXpos(courbe,XdecalageGauche,dotsQuantity,XPoint,Xgap)
     {
         // Comme il est compliqué de faire du temps réel, on va précalculer tous les X pour les differents dot
         // la table DotsXPos contiendra donc tous les X
@@ -36,7 +36,8 @@ function GenerateDotsXpos(courbe,dotsQuantity,XPoint,Xgap)
         for (let quantityOfX=0; quantityOfX<dotsQuantity; quantityOfX++)
             {
                 let XRead = courbe[(XPoint+(quantityOfX*Xgap) & 255)]
-                DotsXPos.push(XRead)
+                let XPoke =XRead+XdecalageGauche
+                DotsXPos.push(XPoke)
             }
         return DotsXPos;
     }

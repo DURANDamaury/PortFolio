@@ -1,4 +1,8 @@
 import InfoBox from '../InfoBox/InfoBox';
+import Projets from '../Projets/Projets';
+import Skills from '../Skills/Skills';
+import Tech from '../Tech/Tech';
+import Tools from '../Tools/Tools';
 import WhoIAm from '../WhoIAm/WhoIAm';
 import CategoriesList from './Assets/Categories.json';
 import Cercles from './Assets/circles.png';
@@ -16,19 +20,19 @@ function Categories()
                 },
                 {
                     Id:"Skills",
-                    Txt:"test"
+                    Txt:<Skills/>
                 },
                 {
                     Id:"Tools",
-                    Txt:"test2"
+                    Txt:<Tools/>
                 },
                 {
                     Id:"Tech",
-                    Txt:"test3"
+                    Txt:<Tech/>
                 },
                 {
                     Id:"Projects",
-                    Txt:"test4"
+                    Txt:<Projets/>
                 }
             ]       
 
