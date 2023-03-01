@@ -40,6 +40,7 @@
         &_true
             {
                 display: flex;
+                justify-content: space-between;
                 max-height: 200px;
                 overflow: hidden;
                 transition: max-height 400ms ease-in-out;

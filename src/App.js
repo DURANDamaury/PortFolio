@@ -1,13 +1,13 @@
 import './App.css';
-import Categories from './Composants/Categories/Categories';
 import Header from './Composants/Header/Header';
+import RoutesList from './Tools/Routes';
 
 function App() 
   {
     return (
       <>
         <Header/>
-        <Categories/>
+        <RoutesList />
       </>
     );
   }

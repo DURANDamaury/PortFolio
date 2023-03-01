@@ -1,11 +1,11 @@
+import Contact from '../Contact/Contact';
 import InfoBox from '../InfoBox/InfoBox';
 import Projets from '../Projets/Projets';
 import Skills from '../Skills/Skills';
 import Tech from '../Tech/Tech';
 import Tools from '../Tools/Tools';
 import WhoIAm from '../WhoIAm/WhoIAm';
-import CategoriesList from './Assets/Categories.json';
-import Cercles from './Assets/circles.png';
+import Cercles from './Assets/circles_autobouclant.png';
 
 import './Categories.scss';
 
@@ -33,6 +33,10 @@ function Categories()
                 {
                     Id:"Projects",
                     Txt:<Projets/>
+                },
+                {
+                    Id:"Contact",
+                    Txt:<Contact/>
                 }
             ]       
 

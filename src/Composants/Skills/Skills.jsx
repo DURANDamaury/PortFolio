@@ -3,15 +3,18 @@ function Skills ()
         return (
                 <div id="Skills">
                     <h2>Mes compétences</h2>
-                    <p>Mon axe d'apprentissage est orienté front-end et toutes les technologies et outils qui gravitent autour.</p>
-                    <p>Je m'intéresse au design et à la mise en avant de l'expérience utilisateur.</p>
-                    <p>La formation et les projets que j'ai effectués m'ont naturellement orientés vers une stack MERN (MongoDB, Express, React Node).<br/>
-                    Cependant, comme chaque projet possèdent leurs propres spécificités, je reste ouvert à l'apprentissage et l'utilisation des différentes technologies disponibles.</p>
+                    <p>Les différents projets pendant la formation m'ont permis de développer des compétences tant au niveau front-end que back-end.</p>
+                    <p>J'ai ainsi pu développer des connaissances sur les langages tels que le HTML, CSS, JavaScript pour enfin                     
+                    m'orienter vers une stack MERN (MongoDB, Express, React Node).</p>
 
-                    <p>Je vois le métier de développeur comme un apprentissage permanent d'un ensemble de technologies qui ne font qu'évoluer;<br/>
-                    c'est pourquoi mon appétence s'étend à tout ce qui touche mon métier, de près ou de loin.</p>
+                    <p>J'ai aussi été amené avant la formation à m'interesser au PHP, à MySQL.</p>
 
-                    <p>Mon objectif long terme est de me spécialiser dans le développement client-side.</p>
+                    <p>Aussi, ayant soif de connaissances, je reste ouvert à l'apprentissage et l'utilisation des différentes technologies disponibles.</p>
+
+                    <p>Ma longue experience en tant que Demomaker m'a amené à m'intéresser au design et au graphisme.</p>
+
+                    <p>Ancien commerçant, je suis aussi à l'aise pour m'exprimer en publique et avec la clientelle. Mes differentes expériences professionnelles m'ont 
+                        permis de développer un sens aigu du travail bien fait, du travail en équipe et de l'organisation.</p>
                 </div>
             )
     }

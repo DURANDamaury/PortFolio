@@ -28,6 +28,19 @@ function WhoIAm()
                 <p>Afin d'avoir de meilleures performances, je me dirigeais alors vers un autre language: L'assembleur Z80.<br/>
                 Je devins démomaker et produisis quelques effets comme les Sinus dots si dessous (bien plus faciles à faire en assembleur).</p>
                 <SinusDots/>
+
+                <h2>Avant la formation</h2>
+
+                <p>Passionné de programmation je n'ai dans un premier temps pas souhaité en faire mon métier "par crainte de détruire cette passion".</p>
+                <p>J'ai donc fait des études dans le domaine scientifique/médical dont la microbiologie, biologie, biochimie (BGB).<br/>
+                J'ai ensuite exercé différents emplois donc celui de préparateur en pharmacie, ainsi que celui de commerçant.</p>
+
+                <h2>La réorientation.</h2>
+
+                <p>Après de nombreuses années de travail, j'ai souhaité changer de direction.<br/>
+                Afin faire un site en rapport avec ma passion pour les vieux ordinateurs, j'ai 
+                commencé à apprendre les bases de quelques langages web dont le HTML, le CSS ou encore le PHP.<br/>
+                C'est ainsi que m'est venue l'idée d'aller plus loin et d'en faire mon métier.</p>
             </div>
             )
     }

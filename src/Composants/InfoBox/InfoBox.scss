@@ -69,6 +69,11 @@
                 justify-content: center;
                 background-color: #20204e;
                 border: none;
+                img:hover
+                    {
+                        scale: 1.1;
+                        transition: scale 0.25s linear;
+                    }
             }
     }
 

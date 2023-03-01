@@ -18,13 +18,13 @@ function SinusDots ()
         const XdecalageGauche = (200-120)/2
 
         //on pourra choisir notre quantité de dots
-        const [dotsQuantity,SetDotsQuantity] = useState(50)
+        const [dotsQuantity,SetDotsQuantity] = useState(164)
         //XPoint sera le pointeur de courbe en X
         const [XPoint,SetXPoint] = useState(0);
         const YPoint = 10;
         //le gap donnera l'écart entre chaque point dans la courbe
-        const [Xgap,SetXgap] = useState(10);
-        const [Ygap,SetYgap] = useState(10);       
+        const [Xgap,SetXgap] = useState(11);
+        const [Ygap,SetYgap] = useState(13);       
 
         //DotsXPos et DotsYPos sont des tables contenant respectivement tous les X et Y
         const DotsXPos = GenerateDotsXpos(courbe,XdecalageGauche,dotsQuantity,XPoint,Xgap);
@@ -44,17 +44,6 @@ function SinusDots ()
 
         return (
                 <div id='SinusDots'>
-                    <div id="dotsZone" style={{height: 124+dotsQuantity}}>
-                        {dotsTable.map((dot) => (
-                            <div 
-                                key={`dot_${dot}`} 
-                                className={`dot_${dot} dot`} 
-                                style={{
-                                    top: DotsYPos[dot & 255],
-                                    left: DotsXPos[dot & 255]
-                                    }}></div>))
-                        }
-                    </div>
                     <DotsControlPannel
                         dotsQuantity={dotsQuantity} 
                         SetDotsQuantity={SetDotsQuantity} 
@@ -65,6 +54,17 @@ function SinusDots ()
                         Ygap={Ygap} 
                         SetYgap={SetYgap} 
                     />
+                    <div id="dotsZone" style={{height: 124+dotsQuantity}}>
+                        {dotsTable.map((dot) => (
+                            <div 
+                                key={`dot_${dot}`} 
+                                className={`dot_${dot} dot`} 
+                                style={{
+                                    top: DotsYPos[dot & 255],
+                                    left: DotsXPos[dot & 255]
+                                    }}></div>))
+                        }
+                    </div>                    
                 </div>
             )
     }

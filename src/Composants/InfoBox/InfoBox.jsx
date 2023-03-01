@@ -5,6 +5,7 @@ import Skills from '../Icon/Assets/Skills.png';
 import Tech from '../Icon/Assets/Tech.png';
 import Tools from '../Icon/Assets/Tools.png';
 import Who from '../Icon/Assets/Who.png';
+import Contact from '../Icon/Assets/Contact.png';
 import Border from './Border/Border';
 import { useState } from 'react';
 
@@ -20,7 +21,8 @@ function InfoBox(props)
             {"ImgName":"Skills", "ImgLink":Skills},
             {"ImgName":"Tech", "ImgLink":Tech},
             {"ImgName":"Tools", "ImgLink":Tools},
-            {"ImgName":"Who", "ImgLink":Who}
+            {"ImgName":"Who", "ImgLink":Who},
+            {"ImgName":"Contact","ImgLink":Contact}
             ]
 
         //finding on ImgTab where is ImgName equal to Id and recover his url
