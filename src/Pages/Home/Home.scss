@@ -1,0 +1,16 @@
+@keyframes xpos1 
+    {
+        from {
+            background-position: 0px 0px, 0px 0px
+        }
+        to { 
+            background-position: 500px 156px, -1024px 33px
+        }
+    }
+
+main 
+    {
+        display: flex;
+        background-blend-mode: difference;
+        animation: 12s linear 1s infinite alternate xpos1;
+    }

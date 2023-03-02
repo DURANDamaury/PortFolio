@@ -1,11 +1,17 @@
 import Categories from "../../Composants/Categories/Categories";
+import Writter from "../../Composants/Writter/Writter";
+import Cercles from './Assets/circles_autobouclant.png';
+import './Home.scss'
 
 function Home()
     {
         return (
-            <main>
+            <main 
+            style={{
+                backgroundImage: `url(${Cercles}),url(${Cercles})`
+            }}>
                 <Categories/>
-                <div>TEST</div>
+                <Writter/>
             </main>
         )
     }

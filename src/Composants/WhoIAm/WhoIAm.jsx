@@ -12,7 +12,7 @@ function WhoIAm()
                 Je suis situé en Normandie dans le département du Calvados.</p>
                 <p>Depuis toujours passionné par la programmation, j'ai décidé d'en faire mon métier après de nombreuses années passées comme commerçant.</p>
                 <p>C'est ainsi que j'ai commencé en Avril 2022 la formation de développeur web chez OpenClassRoom.<br/>
-                Celle-ci c'est terminée en février 2023 et je suis donc désormais disponible pour une première expérience professionnelle.</p>
+                Celle-ci s'est terminée en février 2023 et je suis donc désormais disponible pour une première expérience professionnelle.</p>
 
                 <h2>L'origine d'une passion</h2>
 

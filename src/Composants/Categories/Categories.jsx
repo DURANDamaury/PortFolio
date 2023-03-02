@@ -5,7 +5,7 @@ import Skills from '../Skills/Skills';
 import Tech from '../Tech/Tech';
 import Tools from '../Tools/Tools';
 import WhoIAm from '../WhoIAm/WhoIAm';
-import Cercles from './Assets/circles_autobouclant.png';
+
 
 import './Categories.scss';
 
@@ -42,11 +42,7 @@ function Categories()
 
 
         return (
-            <div id="Categories"
-            style={{
-                backgroundImage: `url(${Cercles}),url(${Cercles})`
-                }}
-            >
+            <div id="Categories">
                 {categories.map((categorie) => (
                     <InfoBox 
                         key={categorie.Id} 
