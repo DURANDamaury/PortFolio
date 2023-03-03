@@ -13,4 +13,8 @@
             {
                 padding: 20px;
             }
+        &_true
+            {opacity: 0; transition: opacity 1s ease-in-out;}
+        &_false
+            {opacity: 1; transition: opacity 1s ease-in-out 1.5s;}
     }

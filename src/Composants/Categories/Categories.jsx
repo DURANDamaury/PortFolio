@@ -10,7 +10,7 @@ import WhoIAm from '../WhoIAm/WhoIAm';
 import './Categories.scss';
 
 
-function Categories()
+function Categories({boxOpen, setBoxOpen})
     {
 
         const categories=[
@@ -43,11 +43,14 @@ function Categories()
 
         return (
             <div id="Categories">
-                {categories.map((categorie) => (
+                {categories.map((categorie, index) => (
                     <InfoBox 
                         key={categorie.Id} 
                         Id={categorie.Id}
                         Txt={categorie.Txt} 
+                        boxOpen={boxOpen}
+                        setBoxOpen={setBoxOpen}
+                        index={index}
                     />
                     ))}
             </div>

@@ -9,12 +9,10 @@ import Contact from '../Icon/Assets/Contact.png';
 import Border from './Border/Border';
 import { useState } from 'react';
 
-function InfoBox(props)
+function InfoBox({Id,Txt,boxOpen,setBoxOpen,index})
     {
-        const Id=props.Id;
-        const Txt=props.Txt;
 
-        //props.id will serve to find image for category
+        //Id will serve to find image for category
         //Searching img link with ID
         const ImgTab = [
             {"ImgName":"Projects", "ImgLink":Projects},
@@ -28,15 +26,34 @@ function InfoBox(props)
         //finding on ImgTab where is ImgName equal to Id and recover his url
         const ImgFound = ImgTab.find((element) => (element.ImgName === Id))
         const ImgLink = ImgFound.ImgLink;
+        //state de la box en cours pour savoir si elle est ouverte ou non
+        const [BoxState, SetBoxState] = useState(false)
 
-            const [BoxState, SetBoxState] = useState(false)
+        function majBoxsStates (index)
+            {
+                const tableState = boxOpen.map((val, iteration) => 
+                    {
+                        if (iteration === index) {return !BoxState}
+                        else {return val}
+                    })
+                setBoxOpen(tableState)
+            }
 
 
         return (
             <div className={`InfoBox_${BoxState}`}>
                 <div className="InfoBox_Header">
                     <div className={`InfoBox_Header_Left_Border_${BoxState}`}><Border /></div>
-                    <button onClick={() => SetBoxState(!BoxState)} className='InfoBox_Header_Icon'><img src={ImgLink} alt="Icon of the category" /></button>
+                    <button onClick={
+                        () => 
+                            {
+                                SetBoxState(!BoxState)
+                                majBoxsStates (index)
+                            }
+                        } 
+                        className='InfoBox_Header_Icon'>
+                            <img src={ImgLink} alt="Icon of the category" />
+                    </button>
                     <div className={`InfoBox_Header_Right_Border_${BoxState}`}><Border /></div>
                 </div>
 

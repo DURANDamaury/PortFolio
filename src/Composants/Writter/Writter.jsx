@@ -1,6 +1,6 @@
 import './Writter.scss';
 
-function Writter()
+function Writter({isOpen})
     {
         const Texte = 
             [
@@ -17,7 +17,7 @@ function Writter()
         
 
         return (
-            <div className='Writter'>
+            <div className={`Writter Writter_${isOpen}`}>
                 <div className="Writter_txt">
                     <h1>TEST</h1>
                     <p>
