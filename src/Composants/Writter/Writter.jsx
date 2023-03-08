@@ -1,20 +1,13 @@
+
 import './Writter.scss';
 
 function Writter({isOpen})
     {
-        const Texte = 
-            [
-                {
-                    type:'titre',
-                    txt:"Ceci est un titre"
-                },
-                {
-                    type:'normal',
-                    txt:"ceci est un texte normal"
-                }
-            ]
-
         
+        const texte0 = "test";
+
+        const texte = texte0.split('')
+
 
         return (
             <div className={`Writter Writter_${isOpen}`}>
@@ -23,6 +16,9 @@ function Writter({isOpen})
                     <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, placeat praesentium. Reiciendis tempore sunt obcaecati suscipit iure aspernatur? Odit aspernatur explicabo ratione aut enim perferendis fuga itaque reprehenderit et soluta.
                     </p>
+                    {
+                        texte.map((txt,index) => (<span key={`txt_${index}`} >{txt}</span>))
+                    }
                 </div>
             </div>
         )

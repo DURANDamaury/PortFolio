@@ -1,3 +1,51 @@
+.InfoBox_Header
+{
+    &_Left_Border_true
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #0e1350;
+            width: 100%;
+            border-radius: 40px 0 0 40px;
+            overflow: hidden;
+            transition: width 1s ease-in-out
+        }
+    &_Left_Border_false
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #0e1350;
+            width: 0%;
+            border-radius: 40px 0 0 40px;
+            overflow: hidden;
+            transition: width 0.5s ease-in-out 2s
+        }    
+    &_Right_Border_true
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #0e1350;
+            width: 100%;
+            border-radius: 0 40px 40px 0;
+            overflow: hidden;
+            transition: width 1s ease-in-out
+        }
+    &_Right_Border_false
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #0e1350;
+            width: 0%;
+            border-radius: 0 40px 40px 0;
+            overflow: hidden;
+            transition: width 0.5s ease-in-out 2s
+        }
+}
+
 .Border_line
     {
         width: 100%;

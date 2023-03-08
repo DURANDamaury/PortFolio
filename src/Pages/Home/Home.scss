@@ -1,16 +1,27 @@
+@import '../../Tools/Variables.scss';
+
 @keyframes xpos1 
     {
         from {
-            background-position: 0px 0px, 0px 0px
+            background-position: -800px -800px, -300px -800px
         }
         to { 
-            background-position: 500px 156px, -1024px 33px
+            background-position: -300px -600px, -800px -833px
         }
     }
 
 main 
     {
         display: flex;
+        flex-direction: column;
         background-blend-mode: difference;
         animation: 12s linear 1s infinite alternate xpos1;
     }
+
+@media screen and (min-width: $desktop)
+{
+main 
+    {
+        flex-direction: row;
+    }
+}

@@ -1,18 +1,17 @@
 import "./Border.scss";
-function Border()
+function Border({position, boxState, Id})
     {
-        //Generate lines in borders
-        const lines=[];
-        //simple loop pushing jsx on array
-        for(let i=0 ; i<11 ; i++){lines.push(<><div className="Border_line"></div><div className="Border_line_space"></div></>)}
-
-        
+        //number of lines
+        const lines=[0,1,2,3,4,5,6,7,8,9,10];
 
         return (
-            <>
-                {lines}
-                <div className="Border_line"></div>
-            </>
+            <div className={`InfoBox_Header_${position}_Border_${boxState}`}>
+                {
+                lines.map((linenumber) => (
+                        <div className="Border_line" key={`${Id}_border_line_${linenumber}`}></div>
+                    ))
+                }
+            </div>
         );
     }
 

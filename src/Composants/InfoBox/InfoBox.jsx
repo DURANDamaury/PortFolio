@@ -43,18 +43,20 @@ function InfoBox({Id,Txt,boxOpen,setBoxOpen,index})
         return (
             <div className={`InfoBox_${BoxState}`}>
                 <div className="InfoBox_Header">
-                    <div className={`InfoBox_Header_Left_Border_${BoxState}`}><Border /></div>
-                    <button onClick={
-                        () => 
-                            {
-                                SetBoxState(!BoxState)
-                                majBoxsStates (index)
-                            }
-                        } 
-                        className='InfoBox_Header_Icon'>
+                    <Border position="Left" boxState={BoxState} key={`${Id}_Border_Left`} id={Id} />
+                    <button
+                        className='InfoBox_Header_Icon'
+                        onClick={
+                            () => 
+                                {
+                                    SetBoxState(!BoxState)
+                                    majBoxsStates (index)
+                                }
+                            } 
+                    >
                             <img src={ImgLink} alt="Icon of the category" />
                     </button>
-                    <div className={`InfoBox_Header_Right_Border_${BoxState}`}><Border /></div>
+                    <Border position="Right" boxState={BoxState} key={`${Id}_Border_Right`}/>
                 </div>
 
                 <div className={`InfoBox_Body_${BoxState}`}>

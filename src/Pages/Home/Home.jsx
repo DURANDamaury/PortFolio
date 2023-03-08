@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Categories from "../../Composants/Categories/Categories";
 import Writter from "../../Composants/Writter/Writter";
-import Cercles from './Assets/circles_autobouclant.png';
+import Cercles from './Assets/circles2.png';
 import './Home.scss'
 
 function Home()

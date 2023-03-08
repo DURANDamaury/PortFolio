@@ -19,9 +19,9 @@ function DotsControlPannel ({dotsQuantity,SetDotsQuantity,Xgap,SetXgap,Ygap,SetY
 
                 <div id={`controlDots_body_${ControlPannelStatus}`} className='controlDots_body'>
                     <div className='controlDots_body_labels'>
-                        <label for="DotsQuantity">Quantité: {dotsQuantity}</label><br/>
-                        <label for="Xgap">Ecart X: {Xgap}</label><br/>
-                        <label for="Ygap">Ecart Y: {Ygap}</label>
+                        <label htmlFor="DotsQuantity">Quantité: {dotsQuantity}</label><br/>
+                        <label htmlFor="Xgap">Ecart X: {Xgap}</label><br/>
+                        <label htmlFor="Ygap">Ecart Y: {Ygap}</label>
                     </div>
                     <div className='controlDots_body_inputs'>               
                         <input
@@ -29,7 +29,7 @@ function DotsControlPannel ({dotsQuantity,SetDotsQuantity,Xgap,SetXgap,Ygap,SetY
                             type="range" 
                             min="1" 
                             max="255" 
-                            defaultvalue={dotsQuantity} 
+                            defaultValue={dotsQuantity} 
                             onChange={(evenement) => SetDotsQuantity(parseInt(evenement.target.value))} 
                         />
                         <br/>
@@ -39,7 +39,7 @@ function DotsControlPannel ({dotsQuantity,SetDotsQuantity,Xgap,SetXgap,Ygap,SetY
                             type="range" 
                             min="1" 
                             max="256" 
-                            defaultvalue={Xgap} 
+                            defaultValue={Xgap} 
                             onChange={(evenement) => SetXgap(evenement.target.value)} 
                         />
                         <br/>
@@ -49,7 +49,7 @@ function DotsControlPannel ({dotsQuantity,SetDotsQuantity,Xgap,SetXgap,Ygap,SetY
                             type="range" 
                             min="1" 
                             max="256" 
-                            defaultvalue={Ygap} 
+                            defaultValue={Ygap} 
                             onChange={(evenement) => SetYgap(evenement.target.value)} 
                         />
                     </div>

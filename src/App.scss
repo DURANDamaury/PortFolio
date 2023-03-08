@@ -1,0 +1,24 @@
+@import './Tools/Variables.scss';
+
+body
+    {
+        width: 400px;
+        margin-left: none;
+        margin-right: none;
+        background-color: #000752;
+        button
+            {
+                border: none;
+                padding: 0;
+            }
+    }
+
+@media screen and (min-width: $desktop)
+{
+body 
+    {
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

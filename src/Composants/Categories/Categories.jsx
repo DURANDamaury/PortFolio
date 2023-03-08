@@ -44,8 +44,9 @@ function Categories({boxOpen, setBoxOpen})
         return (
             <div id="Categories">
                 {categories.map((categorie, index) => (
+                    
                     <InfoBox 
-                        key={categorie.Id} 
+                        key={`Infobox_${index}`} 
                         Id={categorie.Id}
                         Txt={categorie.Txt} 
                         boxOpen={boxOpen}
