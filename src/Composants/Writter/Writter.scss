@@ -6,6 +6,7 @@
         margin-left: 50px;
         margin-right: 20px;
         margin-top: 20px;
+        margin-bottom: 20px;
         border-radius: 40px;
         border: 7px solid white;
         color: yellow;
@@ -16,5 +17,5 @@
         &_true
             {opacity: 0; transition: opacity 1s ease-in-out;}
         &_false
-            {opacity: 1; transition: opacity 1s ease-in-out 1.5s;}
+            {opacity: 1; transition: opacity 1s ease-in-out 3s;}
     }

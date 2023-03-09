@@ -39,10 +39,28 @@ function InfoBox({Id,Txt,boxOpen,setBoxOpen,index})
                 setBoxOpen(tableState)
             }
 
+        //On va vérifier si une box est ouverte dans quel cas les autres box doivent disparaitre.
+        const isOpen = boxOpen.includes(true)
+        let state
+        if (isOpen && BoxState) 
+            {
+                //Une box est ouverte. On va donc vérifier si celle en court l'est ou non
+                //Pour cela on ajoutera une nouvelle classe: Invisible 
+                state="visible"
+            }
+        else if (isOpen && !BoxState)
+            {
+                state="invisible"
+            }
+        else 
+            {
+                state="visible"
+            }
+
 
         return (
-            <div className={`InfoBox_${BoxState}`}>
-                <div className="InfoBox_Header">
+            <div className={`InfoBox_${BoxState} BoxState_${state}` }>
+                <div className={`InfoBox_Header ${state}`}>
                     <Border position="Left" boxState={BoxState} key={`${Id}_Border_Left`} id={Id} />
                     <button
                         className='InfoBox_Header_Icon'
