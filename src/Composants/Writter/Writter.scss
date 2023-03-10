@@ -1,8 +1,50 @@
+@keyframes Writter_disappear
+    {
+        0%
+        {
+            opacity: 1;
+        }
+        99% 
+        {
+            opacity: 0;
+        }
+        100%
+        {
+        display: none;
+            opacity: 0;
+        }
+    }
+
+@keyframes Writter_appear
+    {
+        0%
+        {
+            display: block;
+            opacity: 0;
+        }
+        100%
+        {
+            opacity: 1;
+        }
+    }
+    
+@keyframes writter_animation 
+    {
+        from 
+            {
+                max-height: 0px;
+            }
+        to 
+            {
+                max-height: 1000px;
+            }    
+    }
+    
 .Writter
     {
         width: 100%;
         background-color: #002e8850;
-        //opacity: 0.3;
+        opacity: 0;
         margin-left: 50px;
         margin-right: 20px;
         margin-top: 20px;
@@ -10,12 +52,36 @@
         border-radius: 40px;
         border: 7px solid white;
         color: yellow;
-        &_txt
-            {
-                padding: 20px;
-            }
         &_true
-            {opacity: 0; transition: opacity 1s ease-in-out;}
+            {
+                animation: Writter_disappear 1s linear 0s 1 normal forwards;
+            // opacity: 0;
+            // display: none;
+            // transition: opacity 1s ease-in-out 0s, display 0s linear 1s;
+            }
         &_false
-            {opacity: 1; transition: opacity 1s ease-in-out 3s;}
+            {
+                animation: Writter_appear 1s linear 3s 1 normal forwards;
+            // opacity: 1;
+            // display: block;
+            // transition: opacity 1s ease-in-out 3s;
+            }
     }
+
+
+.Writter_txt
+    {
+        &_false
+        {
+        max-height: 0px;
+        animation: 7s linear 3s forwards writter_animation;
+        overflow: hidden;
+        padding: 20px;
+        }
+        &_true
+        {
+        padding: 20px;
+        }
+    }
+
+
