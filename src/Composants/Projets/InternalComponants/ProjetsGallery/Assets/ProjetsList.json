@@ -1,0 +1,39 @@
+[
+    {
+        "id":"Booki",
+        "work":"Intégration de maquette",
+        "tools":["HTML","CSS"],
+        "link":"https://durandamaury.github.io/OCR_P2/"
+
+    },
+    {
+        "id":"OhMyFood",
+        "work":"Animation / Intégration de maquette",
+        "tools":["HTML","SASS"],
+        "link":"https://durandamaury.github.io/OCR_P3/"
+    },
+    {
+        "id":"La Panthère",
+        "work":"Optimisation de performances / SEO",
+        "tools":["HTML","CSS"],
+        "link":"https://durandamaury.github.io/P4-Modifie/"
+    },
+    {
+        "id":"Kanap",
+        "work":"Intégration de logique Javascript",
+        "tools":["JS"],
+        "link":"https://github.com/DURANDamaury/P5/tree/main/front/js"
+    },
+    {
+        "id":"Piiquante",
+        "work":"Création d'une API JS",
+        "tools":["JS"],
+        "link":"https://github.com/DURANDamaury/OCR_P6"
+    },
+    {
+        "id":"Kasa",
+        "work":"Création du front-end avec React",
+        "tools":["REACT","SASS"],
+        "link":"https://github.com/DURANDamaury/OCR_P7"
+    }
+]

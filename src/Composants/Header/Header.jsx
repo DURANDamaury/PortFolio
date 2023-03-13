@@ -4,7 +4,7 @@ function Header()
     {
         return (
             <header>
-                <h1>Je suis Amaury Durand et vous souhaite la bienvenue sur mon portfolio.</h1>
+                <h1>DURAND AMAURY</h1>
             </header>
         )
     }

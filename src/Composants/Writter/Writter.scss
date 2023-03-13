@@ -25,18 +25,26 @@
         100%
         {
             opacity: 1;
+            //border-bottom: 0px;
         }
     }
     
 @keyframes writter_animation 
     {
-        from 
+        0%
             {
                 max-height: 0px;
+                border-bottom: 1px solid yellow;
             }
-        to 
+        99% 
             {
-                max-height: 1000px;
+                max-height: 800px;
+                border-bottom: 1px solid yellow;
+            }
+        100%
+            {
+                max-height: 800px;
+                border-bottom: 0px;
             }    
     }
     
@@ -77,6 +85,7 @@
         animation: 7s linear 3s forwards writter_animation;
         overflow: hidden;
         padding: 20px;
+        box-sizing: border-box;
         }
         &_true
         {

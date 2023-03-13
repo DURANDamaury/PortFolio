@@ -1,10 +1,11 @@
+import { NavLink } from 'react-router-dom'
 import './Footer.scss'
 
 function Footer ()
     {
         return (
             <footer>
-                bottombar
+                <NavLink to='/MentionsLegales'>Mentions légales</NavLink>
             </footer>
         )
     }

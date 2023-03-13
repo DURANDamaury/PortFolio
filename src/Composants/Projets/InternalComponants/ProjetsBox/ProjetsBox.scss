@@ -1,0 +1,35 @@
+.ProjetsBox
+    {
+        background-color: white;
+        color: black;
+        width: 45%;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 5px solid black;
+        outline: 1px solid #7b85ff;
+        border-radius: 40px;
+        margin-bottom: 20px;
+
+        &_img
+            {
+                width: fit-content;
+                img 
+                {
+                    max-width: 100%;
+                }
+            }
+        &_title
+            {
+                text-align: center;
+                font-size: 3vh;
+                font-weight: 700;
+                margin: 0;
+            }
+        &_work
+            {
+                text-align: center;
+                font-size: 2vh;
+                margin: 0;
+                color: #1b3076;
+            }
+    }
