@@ -14,7 +14,8 @@ function ProjetsGallery ()
                         id={ListData.id}
                         work={ListData.work}
                         tools={ListData.tools}
-                        link={ListData.link}
+                        gitLink={ListData.gitLink}
+                        gitPage={ListData.gitPage}
                     />)
                 )}
             </div>

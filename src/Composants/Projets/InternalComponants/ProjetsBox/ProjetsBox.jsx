@@ -12,6 +12,7 @@ import imageSASS from './Assets/SASS.png';
 import imageREACT from './Assets/REACT.png';
 //importation sass
 import './ProjetsBox.scss';
+import { Link } from 'react-router-dom';
 
 function ProjetsBox (props)
     {
@@ -19,7 +20,8 @@ function ProjetsBox (props)
     const id = props.id;
     const work = props.work;
     const tools = props.tools;
-    const link = props.link;
+    const gitLink = props.gitLink;
+    const gitPage = props.gitPage;
 
     //On va chercher l'image correspondante à l'id
     const ImagesList = [
@@ -50,7 +52,7 @@ function ProjetsBox (props)
             let toolImage = toolImageToFind.image;
             toolsUsed.push(toolImage)
         }
-    console.log(toolsUsed)
+
 
     return (
         <div className="ProjetsBox">
@@ -58,7 +60,22 @@ function ProjetsBox (props)
             <p className='ProjetsBox_title'>{id}</p>
             <p className='ProjetsBox_work'>{work}</p>
             <div className="ProjetsBox_tools">
-                {toolsUsed.map((toolToPut) => <img src={toolToPut} alt="Tool logo" />)}
+                {toolsUsed.map((toolToPut) => 
+                    <img
+                    key={`toolIcon_${toolToPut}`} 
+                    src={toolToPut} 
+                    alt="Tool logo" />)}
+            </div>
+            <div className="ProjetsBox_links">
+                <Link to={{ pathname: gitLink }} target="_blank" className="ProjetsBox_button gitLink">
+                    Source
+                </Link>
+
+                { gitPage.length>0 && 
+                    <Link to={{ pathname: gitPage }} target="_blank" className="ProjetsBox_button gitPage">
+                        Voir
+                    </Link>
+                }
             </div>
         </div>
         )

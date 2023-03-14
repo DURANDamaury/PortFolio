@@ -13,6 +13,8 @@
         &_img
             {
                 width: fit-content;
+                border: 1px solid #0021ff;
+                margin-bottom: 20px;
                 img 
                 {
                     max-width: 100%;
@@ -24,6 +26,7 @@
                 font-size: 3vh;
                 font-weight: 700;
                 margin: 0;
+                margin-bottom: 20px;
             }
         &_work
             {
@@ -31,5 +34,37 @@
                 font-size: 2vh;
                 margin: 0;
                 color: #1b3076;
+                margin-bottom: 20px;
+            }
+        &_tools
+            {
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                img {max-height: 100%;}
+            }
+        &_button
+            {
+                height: 32px;
+            }
+        &_links
+            {
+                display: flex;
+                justify-content: center;
+                a 
+                {
+                    display: block;
+                    height: 32px;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2vh;
+                    border-radius: 6px;
+                    margin: 6px;
+                    width: 81px;
+                    text-align: center;
+                    background-color: #dcc5e6;
+                }
             }
     }
