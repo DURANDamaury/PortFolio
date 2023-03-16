@@ -1,0 +1,25 @@
+.Contact_box
+    {
+        display: flex;
+        border: 5px solid #2d38bb;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: #181979;
+        &_icon
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                img {max-width: 100%;}
+            }
+        &_nom
+            {
+                display: flex;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+                min-width: 130px;
+                margin-left: 10px;
+            }
+    }
