@@ -5,6 +5,7 @@
         border-radius: 5px;
         margin-bottom: 20px;
         background-color: #181979;
+        height: 32px;
         &_icon
             {
                 display: flex;
@@ -22,4 +23,55 @@
                 min-width: 130px;
                 margin-left: 10px;
             }
+        &_infos_false
+            {
+                max-width: 0px;
+                overflow: hidden;
+                transition: max-width 1s ease-in-out 0s;
+                text-decoration: none;
+                color: #b9adff;
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+        &_infos_true
+            {
+                max-width: 400px;
+                transition: max-width 1s ease-in-out 0s;
+                overflow: hidden;
+                text-decoration: none;
+                color: #b9adff;
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                font-weight: bold;                
+                margin-right: 10px;
+            }
+        &_arrow_false
+            {
+                width: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                rotate: 0deg;
+                transition: rotate 1s ease-in-out;
+            }
+        &_arrow_true
+            {
+                width: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                rotate: 180deg;
+                transition: rotate 1s ease-in-out;
+            }
     }
+.Contact_box:hover
+{
+    border: 5px solid #ffffff;
+    transition: border 0.25s linear;
+}

@@ -12,13 +12,13 @@ function Contact()
                 {
                 nom: "Mon Linkedin",
                 icone: "Linkedin",
-                link: '<a href="https://www.linkedin.com/in/durand-amaury/" target="_blank">https://www.linkedin.com/in/durand-amaury/</a>'
+                link: "https://www.linkedin.com/in/durand-amaury/"
                 },
 
                 {
                 nom: "Mon email",
                 icone: "Mail",
-                link: '<a href="mailto:bdciron@gmail.com">bdciron@gmail.com</a>'
+                link: "amaury.durand.fr@gmail.com"
                 },
 
                 {
