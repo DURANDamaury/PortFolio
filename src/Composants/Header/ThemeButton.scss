@@ -1,0 +1,33 @@
+$widthButton: 100px;
+$margin: 2%;
+.themeButton
+    {
+        width: $widthButton;
+        background-color: #313267;
+        border: 4px solid white;
+        outline: 1px solid black;
+        border-radius: 25px;
+        margin-right: $margin;
+        &Round
+            {
+                &_newSchool
+                {
+                    margin-left: 0%;
+                    background-color: #008aff;
+                    height: 4VH;
+                    width: 4VH;
+                    border-radius: 25px;
+                    transition: margin-left  0.2s linear;
+                }
+                &_oldSchool
+                {
+                    margin-left: 60%;
+                    background-color: #0088ff;
+                    height: 4VH;
+                    width: 4VH;
+                    border-radius: 25px;
+                    transition: margin-left  0.2s linear;
+                }
+                
+            }
+    }

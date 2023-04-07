@@ -1,3 +1,5 @@
+@import '../../Tools/Variables.scss';
+
 @keyframes Writter_disappear
     {
         0%
@@ -50,47 +52,86 @@
     
 .Writter
     {
-        width: 100%;
-        background-color: #002e8850;
-        opacity: 0;
-        margin-left: 50px;
-        margin-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 40px;
-        border: 7px solid white;
-        color: yellow;
-        &_true
+        &_oldSchool
             {
-                animation: Writter_disappear 1s linear 0s 1 normal forwards;
-            // opacity: 0;
-            // display: none;
-            // transition: opacity 1s ease-in-out 0s, display 0s linear 1s;
+                width: 100%;
+                background-color: #002e8850;
+                opacity: 0;
+                margin-left: 50px;
+                margin-right: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 40px;
+                border: 7px solid white;
+                color: yellow;
+                &_true
+                    {
+                        animation: Writter_disappear 1s linear 0s 1 normal forwards;
+                    // opacity: 0;
+                    // display: none;
+                    // transition: opacity 1s ease-in-out 0s, display 0s linear 1s;
+                    }
+                &_false
+                    {
+                        animation: Writter_appear 1s linear 3s 1 normal forwards;
+                    // opacity: 1;
+                    // display: block;
+                    // transition: opacity 1s ease-in-out 3s;
+                    }
             }
-        &_false
+        &_newSchool
             {
-                animation: Writter_appear 1s linear 3s 1 normal forwards;
-            // opacity: 1;
-            // display: block;
-            // transition: opacity 1s ease-in-out 3s;
+                background-color: $newSchoolBackColor;
+                opacity: 1;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 40px;
+                box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+                color: #654c80;
+                //&_true {}
+                //&_false {}
+                    
             }
     }
 
 
 .Writter_txt
     {
-        &_false
-        {
-        max-height: 0px;
-        animation: 7s linear 3s forwards writter_animation;
-        overflow: hidden;
-        padding: 20px;
-        box-sizing: border-box;
-        }
-        &_true
-        {
-        padding: 20px;
-        }
+        &_oldSchool
+            {
+            &_false
+                {
+                max-height: 0px;
+                animation: 7s linear 3s forwards writter_animation;
+                overflow: hidden;
+                padding: 20px;
+                box-sizing: border-box;
+                }
+            &_true
+                {
+                padding: 20px;
+                }
+            }
+        &_newSchool
+            {
+                &_true
+                {
+                    padding: 20px;
+                }
+                &_false
+                {
+                    padding: 20px;
+                }
+            }
     }
 
+.portrait
+    {
+        height: 30vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 

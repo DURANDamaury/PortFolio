@@ -12,7 +12,6 @@ import imageSASS from './Assets/SASS.png';
 import imageREACT from './Assets/REACT.png';
 //importation sass
 import './ProjetsBox.scss';
-import { Link } from 'react-router-dom';
 
 function ProjetsBox (props)
     {
@@ -67,14 +66,14 @@ function ProjetsBox (props)
                     alt="Tool logo" />)}
             </div>
             <div className="ProjetsBox_links">
-                <Link to={{ pathname: gitLink }} target="_blank" className="ProjetsBox_button gitLink">
+                <a href={gitLink } target="_blank" className="ProjetsBox_button gitLink" rel="noopener noreferrer">
                     Source
-                </Link>
+                </a>
 
                 { gitPage.length>0 && 
-                    <Link to={{ pathname: gitPage }} target="_blank" className="ProjetsBox_button gitPage">
+                    <a href={gitPage} target="_blank" className="ProjetsBox_button gitPage" rel="noopener noreferrer">
                         Voir
-                    </Link>
+                    </a>
                 }
             </div>
         </div>

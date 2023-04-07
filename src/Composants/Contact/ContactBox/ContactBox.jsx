@@ -1,6 +1,5 @@
 //Images
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 //gfxs
 import linkedinIcon from './Assets/Linkedin_logo.png';
 import mailIcone from './Assets/mail.png';
@@ -40,7 +39,7 @@ function ContactBox ({nom,icone,link})
             {nom === "Mon email" && 
                 <a className={`Contact_box_mail Contact_box_infos_${contactState}`} href={`mailto:${link}`}>{link}</a> }
             {nom === "Mon Linkedin" && 
-                <Link to={{ pathname: link }} target="_blank" className={`Contact_box_linkedin Contact_box_infos_${contactState}`}>{link}</Link>}
+                <a href={link} target="_blank" className={`Contact_box_linkedin Contact_box_infos_${contactState}`} rel="noopener noreferrer">{link}</a>}
         </div>
     )
 }

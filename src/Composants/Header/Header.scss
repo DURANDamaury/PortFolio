@@ -1,7 +1,14 @@
-header
+@import '../../Tools/Variables.scss';
+$widthButton: 100px;
+$margin: 2%;
+
+.header_oldSchool
     {
         background-color: #2d38bb;
         height: 5VH;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         h1 
             {
                 font-size: 34px;
@@ -11,3 +18,27 @@ header
                 text-align: center;
             }
     }
+
+    .header_newSchool
+    {
+        background-color: $newSchoolHeadColor;
+        height: 5VH;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h1 
+            {
+                font-size: 34px;
+                font-weight: 700;
+                margin: 0;
+                color: white;
+                text-align: center;
+            }
+    }    
+
+.themeEmptyDiv
+    {
+        width: $widthButton;
+        margin-left: $margin;
+    }    
+

@@ -10,18 +10,39 @@
         }
     }
 
-main 
+.main
     {
-        display: flex;
-        flex-direction: column;
-        background-blend-mode: difference;
-        animation: 12s linear 1s infinite alternate xpos1;
+    &_oldSchool
+        {
+            display: flex;
+            flex-direction: column;
+            background-blend-mode: difference;
+            animation: 12s linear 1s infinite alternate xpos1;
+        }
+    &_newSchool
+        {
+            display: flex;
+            flex-direction: column;
+            background-color: $newSchoolBackColor;
+        }
     }
 
+
+
+    
+//DESKTOP
 @media screen and (min-width: $desktop)
 {
-main 
+.main
     {
-        flex-direction: row;
+    &_oldSchool
+        {
+            flex-direction: row;
+        }
+    &_newSchool
+        {
+            flex-direction: column-reverse;
+        }
     }
+    
 }

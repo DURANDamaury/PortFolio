@@ -1,19 +1,18 @@
-import { StrictMode } from 'react';
 import './App.scss';
 import Footer from './Composants/Footer/Footer';
 import Header from './Composants/Header/Header';
 import RoutesList from './Tools/Routes';
+import { ThemeProvider } from './Tools/context';
 
 function App() 
   {
     return (
       <>
-        <StrictMode>
+        <ThemeProvider>
           <Header/>
           <RoutesList />
           <Footer/>
-        </StrictMode>
-        
+        </ThemeProvider>
       </>
     );
   }

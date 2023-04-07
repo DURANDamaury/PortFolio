@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import Contact from '../Contact/Contact';
 import InfoBox from '../InfoBox/InfoBox';
 import Projets from '../Projets/Projets';
@@ -8,11 +9,12 @@ import WhoIAm from '../WhoIAm/WhoIAm';
 
 
 import './Categories.scss';
+import { ThemeContext } from '../../Tools/context';
 
 
 function Categories({boxOpen, setBoxOpen})
     {
-
+        const {theme} = useContext(ThemeContext)
         const categories=[
                 {
                     Id:"Who",
@@ -42,7 +44,7 @@ function Categories({boxOpen, setBoxOpen})
 
 
         return (
-            <div id="Categories">
+            <div id={`Categories_${theme}`}>
                 {categories.map((categorie, index) => (
                     
                     <InfoBox 

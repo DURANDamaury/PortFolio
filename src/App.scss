@@ -5,20 +5,12 @@ body
         width: 400px;
         margin-left: none;
         margin-right: none;
-        background-color: #000752;
         button
             {
                 border: none;
                 padding: 0;
             }
         /* Hide scrollbar for Chrome, Safari and Opera */
-
-    }
-
-main
-    {
-        height: 90VH;
-        overflow: auto;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
         &::-webkit-scrollbar 
@@ -26,6 +18,39 @@ main
             display: none;
         }
     }
+
+.body_oldSchool {background-color: #000752;}
+.body_newSchool {background-color: white;}
+
+.main
+    {
+        &_oldSchool
+            {
+                height: 90VH;
+                overflow: auto;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                &::-webkit-scrollbar 
+                {
+                    display: none;
+                }
+            }
+
+        &_newSchool
+            {
+                overflow: auto;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                &::-webkit-scrollbar 
+                {
+                    display: none;
+                }
+            }
+    }
+
+
+
+//DESKTOP
 @media screen and (min-width: $desktop)
 {
 body 
